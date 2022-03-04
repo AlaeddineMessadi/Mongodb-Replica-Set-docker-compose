@@ -30,7 +30,7 @@ Start the server
 ```bash
   ./start_db.sh
 ```
-
+If you didn't use `./start_db.sh` script, then you should run `$ docker exec mongo1 /scripts/init.sh` after your run `$ docker-compose up -d` to initialize replica set in your servers.
 
 ## Tech Stack
 
