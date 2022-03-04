@@ -10,33 +10,41 @@ We get errors if we try to actually write to a database that does not have repli
 1. Use [MongoDB Atlas](https://www.mongodb.com/atlas/database). It is a free-service where we can create MongoDB cluster that supports replication.
 2. Setup a local MongoDB server with replication
 
+## Tech Stack
 
+- [Docker](https://docs.docker.com/get-docker/) (docker-compose)
+- YAML
+- Bash
 ## Installation
 
 Clone the project
 
 ```bash
-  git clone git@github.com:AlaeddineMessadi/Mongodb-Replica-Set-docker-compose.git mongodb-replset
+  $ git clone git@github.com:AlaeddineMessadi/Mongodb-Replica-Set-docker-compose.git mongodb-replset
 ```
 
 Go to the project directory
 
 ```bash
-  cd mongodb-replset
+  $ cd mongodb-replset
 ```
 
 Start the server
 
 ```bash
-  ./start_db.sh
+  $ ./start.sh
 ```
-If you didn't use `./start_db.sh` script, then you should run `$ docker exec mongo1 /scripts/init.sh` after your run `$ docker-compose up -d` to initialize replica set in your servers.
+If you didn't use `./start.sh` script, then you should run `$ docker exec mongo1 /scripts/init.sh` after your run `$ docker-compose up -d` to initialize replica set in your servers.
 
-## Tech Stack
+Stop the server
 
-- Docker (docker-compose)
-- YAML
-- Bash
+```bash
+  $ ./stop.sh
+
+  # or
+
+  $ docker-compose down
+```
 
 ## Contributing
 
