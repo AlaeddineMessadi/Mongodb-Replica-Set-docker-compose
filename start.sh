@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker-compose --file ./docker-compose.yml up -d
+docker-compose up -d
 
 sleep 5
 
