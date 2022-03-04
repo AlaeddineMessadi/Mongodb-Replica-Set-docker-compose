@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker-compose --file ./mongodb/docker-compose.yml up -d
+docker-compose --file ./docker-compose.yml up -d
 
 sleep 5
 
